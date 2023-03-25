@@ -1,0 +1,53 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+  .hero_image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .title_text_container {
+    position: relative;
+    text-align: center;
+  }
+  .text_move {
+    position: absolute;
+    top: 90px;
+    left: 0%;
+    transform: translate(20%, -100%);
+    color: #fff;
+    text-shadow: 1px 1px 1px gray;
+    font-size: 70px;
+  }
+  .col {
+    width: 100%;
+    float: left;
+    /*set standard height*/
+    /* adding padding*/
+  }
+  
+  ol li {
+    padding-bottom: 12px;
+  }
+  
+  .main:after {
+    display: inline;
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*Desktop Mode Resize*/
+  
+  @media (min-width: 992px) {
+    .col {
+      width: 50%;
+    }
+  }
+  
+  /*ultra small*/
+  @media (max-width: 500px) {
+    .text_move {
+      transform: translate(50%, -100%);
+    }
+  }
+  
